@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Dia do professor</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -12,9 +12,34 @@
 
 <style>
 
+@font-face {
+   font-family: laCasa;
+   src: url(css/Coluna.otf);
+}
+
+body {
+	font-family: laCasa;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: black;
+}
+
+.box-title {
+	display: inline-block;
+    background: red;
+    padding: 1px 6px 1px 5px;
+    height: 42px;
+    color: white;
+}
+
 .content-text {
 text-align: center;
 height: 720px;
+}
+
+.light-text {
+	color: gray;
 }
 
 .content-footer {
@@ -73,7 +98,7 @@ height: 720px;
 <body>
 
 <div class="jumbotron text-center">
-  <h1>Feliz dia do...</h1> 
+  <a href="index.html"><h1>FELIZ DIA <div class="box-title">DO</div></a>...</h1> 
 </div>
   
 <div class="container">
@@ -87,15 +112,19 @@ height: 720px;
 </div>
 
 <div class="jumbotron text-center content-footer">
-  <p><strong>:)<strong></p> 
+  <p><strong>Powered with <span class="light-text">s2</span> by <span class="light-text">Rapha</span><strong></p> 
 </div>
 
 <script>
-document.querySelector('.professor').style.display = 'none'; 
-setTimeout(function(){ 
-document.querySelector('.content-text').style.display = 'none'; 
-document.querySelector('.professor').style.display = 'table'; 
-}, 4000);
+	document.querySelector('.professor').style.display = 'none'; 
+	setTimeout(function(){ 
+	document.querySelector('.content-text').style.display = 'none'; 
+	document.querySelector('.professor').style.display = 'table'; 
+	}, 4000);
+
+	function recarregar() {
+		window.location.reload();
+	}
 </script>
 
 
