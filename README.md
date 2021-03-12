@@ -1,2 +1,2 @@
 # diadoprofessor
-Simple website to teacher's day 
+Small website to teacher's day 
